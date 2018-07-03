@@ -1,0 +1,117 @@
+[
+  {
+    "description": "  As a user of Expedia.com\n  I should search for flight from the landing page",
+    "keyword": "Feature",
+    "name": "Searching flight",
+    "line": 1,
+    "id": "searching-flight",
+    "tags": [],
+    "uri": "features/home.feature",
+    "elements": [
+      {
+        "id": "searching-flight;landing-at-the-expedia.com-home",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Landing at the Expedia.com home",
+        "tags": [
+          {
+            "name": "@search",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "That I entered Expedia.com",
+            "match": {
+              "location": "step_definitions/home.steps.js:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20011000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 20000 milliseconds\n    at Timeout._onTimeout (/Users/naveencm/Documents/protractor-cucumber/protractor/node_modules/cucumber/src/user_code_runner.js:61:18)\n    at ontimeout (timers.js:475:11)\n    at tryOnTimeout (timers.js:310:5)\n    at Timer.listOnTimeout (timers.js:270:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should should see Expedia.com logo",
+            "match": {
+              "location": "step_definitions/home.steps.js:17"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "searching-flight;getting-multiple-search-tabs",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Getting multiple search tabs",
+        "tags": [
+          {
+            "name": "@search",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "That I am at the home page",
+            "match": {
+              "location": "step_definitions/home.steps.js:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20009000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 20000 milliseconds\n    at Timeout._onTimeout (/Users/naveencm/Documents/protractor-cucumber/protractor/node_modules/cucumber/src/user_code_runner.js:61:18)\n    at ontimeout (timers.js:475:11)\n    at tryOnTimeout (timers.js:310:5)\n    at Timer.listOnTimeout (timers.js:270:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should have search tabs",
+            "match": {
+              "location": "step_definitions/home.steps.js:25"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

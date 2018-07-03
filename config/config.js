@@ -20,17 +20,17 @@ exports.config = {
     }
 }
 // ,
-// {
-//   browserName: 'chrome',
-//   shardTestFiles: true,
-//   maxInstances: 2,
-//   chromeOptions: {
-//       mobileEmulation: {
-//         deviceName: 'Nexus 5'
-//       },
-//       args: ['disable-infobars']
-//   }
-// }
+//  {
+//    browserName: 'chrome',
+//    shardTestFiles: true,
+//    maxInstances: 2,
+//    chromeOptions: {
+//        mobileEmulation: {
+//          deviceName: 'Nexus 5'
+//        },
+//        args: ['disable-infobars']
+//    }
+//  }
 ],
 
   maxSessions: 5,
@@ -46,7 +46,8 @@ exports.config = {
   cucumberOpts: {
     require: '../step_definitions/*.steps.js',
     tags: '@search',
-    format: 'pretty'
+    format: 'json:.tmp/results.json',
+    strict:true
   },
   plugins: [{
     package: 'protractor-multiple-cucumber-html-reporter-plugin',

@@ -1,0 +1,115 @@
+[
+  {
+    "description": "  As a user of Expedia.com\n  I should search for flight from the landing page",
+    "keyword": "Feature",
+    "name": "Searching flight",
+    "line": 1,
+    "id": "searching-flight",
+    "tags": [],
+    "uri": "features/home.feature",
+    "elements": [
+      {
+        "id": "searching-flight;landing-at-the-expedia.com-home",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Landing at the Expedia.com home",
+        "tags": [
+          {
+            "name": "@search",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "That I entered Expedia.com",
+            "match": {
+              "location": "step_definitions/home.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9859000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should should see Expedia.com logo",
+            "match": {
+              "location": "step_definitions/home.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "searching-flight;getting-multiple-search-tabs",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Getting multiple search tabs",
+        "tags": [
+          {
+            "name": "@search",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "That I am at the home page",
+            "match": {
+              "location": "step_definitions/home.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should have search tabs",
+            "match": {
+              "location": "step_definitions/home.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
