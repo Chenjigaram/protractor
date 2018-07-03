@@ -22,14 +22,14 @@
   },
   "homepage": "https://github.com/Chenjigaram/protractor#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-as-promised": "^5.3.0",
-    "protractor-multiple-cucumber-html-reporter-plugin": "^1.7.0"
+    "chai": "latest",
+    "chai-as-promised": "latest",
+    "protractor-multiple-cucumber-html-reporter-plugin": "latest"
   },
   "dependencies": {
-    "protractor": "^5.1.0",
-    "protractor-cucumber-framework": "^0.5.0",
-    "cucumber": "^0.10.2"
+    "protractor": "latest",
+    "protractor-cucumber-framework": "latest",
+    "cucumber": "latest"
   },
   "standard": {
     "env": [
