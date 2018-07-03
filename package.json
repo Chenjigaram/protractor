@@ -1,0 +1,39 @@
+{
+  "name": "protractor-cucumber-demo",
+  "version": "1.0.0",
+  "description": "Demo: to showcase Protractor integration with Cucumber",
+  "main": "config/config.js",
+  "scripts": {
+    "test": "protractor ./config/config.js",
+    "wd": "./node_modules/protractor/bin/webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chenjigaram/protractor.git"
+  },
+  "keywords": [
+    "Protractor",
+    "Cucumber"
+  ],
+  "author": "Girma Nigusse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chenjigaram/protractor/issues"
+  },
+  "homepage": "https://github.com/Chenjigaram/protractor#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0"
+  },
+  "dependencies": {
+    "protractor": "^5.1.0",
+    "protractor-cucumber-framework": "^0.5.0",
+    "cucumber": "^0.10.2"
+  },
+  "standard": {
+    "env": [
+      "jasmine",
+      "protractor"
+    ]
+  }
+}
